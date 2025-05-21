@@ -7,7 +7,7 @@
     const getRecommendations = async () => {
       setLoading(true);
       const token = localStorage.getItem('token');
-      const res = await fetch('http://localhost:5000/api/recommendations', {
+      const res = await fetch('https://dummy-2-7njc.onrender.com/api/recommendations', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
