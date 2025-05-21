@@ -15,7 +15,7 @@ function Profile() {
 
   const handleSave = async () => {
     const token = localStorage.getItem('token');
-    await fetch('http://localhost:5000/api/profile', {
+    await fetch('https://dummy-2-7njc.onrender.com/api/profile', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
